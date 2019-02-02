@@ -3,6 +3,7 @@
 !.gitmodules
 !README.md
 
+##==== $HOME dotfiles ====#
 !.vimrc
 !.vim
 !.vim/*
@@ -13,8 +14,16 @@
 !.vim/*/*/*/*/*/*
 !.vim/*/*/*/*/*/*/*
 
+!.profile
+!.gitconfig
+!.fehbg
+!.xinitrc
 
-##==== Configs ====##
+!.screenlayout/
+!.screenlayout/laptop.sh
+
+
+##==== .config dir ====##
 !.config/
 
 !.config/i3

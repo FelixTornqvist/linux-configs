@@ -1,0 +1,6 @@
+[user]
+	email = felix.trnqvist@gmail.com
+	name = Felix Törnqvist
+[alias]
+	lg = log --graph --oneline --all --decorate
+	lge = log --graph --all --decorate
