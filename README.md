@@ -1,5 +1,6 @@
 # linux-configs
 This repo contains all of my dotfiles, scripts and such for my linux installation.
+This repo uses submodules for vim plugins, so use --recurse-submodules when cloning this repo to get them as well.
 
 ## Installed packages
 
