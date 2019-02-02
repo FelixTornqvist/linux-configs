@@ -1,0 +1,24 @@
+#!/bin/bash
+
+case $1 in
+	get)
+		echo "GET Synced dir from pi"
+		rsync -azP --delete --backup --backup-dir=/media/Data/PI-sync/Synced-backup pi@192.168.2.3:/media/DISK/Files/Synced/ /media/Data/PI-sync/Synced/
+		;;
+	push)
+		echo "PUSH Synced dir to pi"
+		rsync -azP --delete --backup --backup-dir=/media/DISK/Files/Synced-backup /media/Data/PI-sync/Synced/ pi@192.168.2.3:/media/DISK/Files/Synced/
+		;;
+	get-unsynced)
+		echo "GET Unsynced dir from pi"
+		rsync -azP --delete --backup --backup-dir=/media/Data/PI-sync/Unsynced-backup pi@192.168.2.3:/media/DISK/Files/Unsynced/ /media/Data/PI-sync/Unsynced/
+		;;
+	push-unsynced)
+		echo "PUSH Unsynced dir to pi"
+		rsync -azP --delete --backup --backup-dir=/media/DISK/Files/Unsynced-backup /media/Data/PI-sync/Unsynced/ pi@192.168.2.3:/media/DISK/Files/Unsynced/
+		;;
+	*)
+		echo "unsupported action"
+		;;
+esac
+

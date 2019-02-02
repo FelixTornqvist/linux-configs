@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/media/Data/Users/Felix/Documents/gitKraken/DeepCoder-device-management/deepcoder'
+let g:netrw_dirhist_2='/media/Data/Users/Felix/Documents/gitKraken/thesis2018/Github/deepcoder/lib'
+let g:netrw_dirhist_3='/media/Data/Users/Felix/Documents/gitKraken/thesis2018/Github/deepcoder/lib/dsl'
+let g:netrw_dirhist_4='/media/Data/Users/Felix/Documents/gitKraken/thesis2018/Github/protocol_adapter'
+let g:netrw_dirhist_5='/media/Data/Users/Felix/Documents/gitKraken/thesis2018/protocol_adapter'
+let g:netrw_dirhist_6='/home/felix/scripts'
+let g:netrw_dirhist_7='/home/felix'
+let g:netrw_dirhist_8='/home/felix/Documents'
+let g:netrw_dirhist_9='/home/felix/git/OpenGL-experiment/src'

@@ -1,0 +1,60 @@
+*
+!.gitignore
+!.gitmodules
+!README.md
+
+!.vimrc
+!.vim
+!.vim/*
+!.vim/*/*
+!.vim/*/*/*
+!.vim/*/*/*/*
+!.vim/*/*/*/*/*
+!.vim/*/*/*/*/*/*
+!.vim/*/*/*/*/*/*/*
+
+
+##==== Configs ====##
+!.config/
+
+!.config/i3
+!.config/i3/config
+!.config/i3/config.desktop
+!.config/i3/i3exit
+
+!.config/vifm
+!.config/vifm/*
+!.config/vifm/*/*
+
+!.config/polybar
+!.config/polybar/*
+
+!.config/compton.conf
+
+
+##==== Scripts ====##
+!scripts/
+
+!scripts/audiocontrol.sh
+!scripts/i3.sh
+!scripts/mouseSetup.sh
+!scripts/screenshot.sh
+!scripts/start\ EQ.sh
+!scripts/start\ qpaeq.sh
+
+!scripts/mic/
+!scripts/mic/*
+
+!scripts/bin/
+!scripts/bin/mysync
+!scripts/bin/toggleKB
+
+!scripts/tabletScripts/
+!scripts/tabletScripts/set\ touch\ off.sh
+!scripts/tabletScripts/set\ touch\ on.sh
+
+!scripts/tabletTray/
+!scripts/tabletTray/*
+!scripts/tabletTray/*/*
+
+*~

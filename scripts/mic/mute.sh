@@ -1,0 +1,1 @@
+pacmd set-source-mute 2 1 && notify-send "muted"
