@@ -7,10 +7,17 @@ This repo uses submodules for vim plugins, so use --recurse-submodules when clon
 ### "Manually" compiled and installed:
 * i3-gaps https://github.com/Airblader/i3.git
 * polybar https://github.com/jaagr/polybar.git
+* fzf https://github.com/junegunn/fzf
 
 
 ### Get these with apt-get:
 
+* screen
+* file-roller
+* vlc
+* libpulse-dev
+* pulseaudio-equalizer
+* fonts-noto-color-emoji 
 * xserver-xorg-input-synaptics
 * w3m-img
 * w3m
