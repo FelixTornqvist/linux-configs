@@ -8,10 +8,12 @@ This repo uses submodules for vim plugins, so use --recurse-submodules when clon
 * i3-gaps https://github.com/Airblader/i3.git
 * polybar https://github.com/jaagr/polybar.git
 * fzf https://github.com/junegunn/fzf
+* spotify (debian package from their repo)
 
 
 ### Get these with apt-get:
 
+* nvim
 * screen
 * file-roller
 * vlc

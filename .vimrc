@@ -44,6 +44,7 @@ filetype plugin indent on
 
 " type \s for easy substituting
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+let $FZF_DEFAULT_COMMAND='find .'
 
 let g:airline_powerline_fonts = 1
 set number
