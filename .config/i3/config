@@ -40,9 +40,9 @@ font pango:Ubuntu Condensed 11
 floating_modifier $mod
 
 # DEFINITIONS
-set $inc --no-startup-id /home/felix/Documents/scripts/audiocontrol.sh +5
-set $dec --no-startup-id /home/felix/Documents/scripts/audiocontrol.sh -5
-set $mute --no-startup-id /home/felix/Documents/scripts/audiocontrol.sh -1000
+set $inc --no-startup-id /home/felix/scripts/audiocontrol.sh +5
+set $dec --no-startup-id /home/felix/scripts/audiocontrol.sh -5
+set $mute --no-startup-id /home/felix/scripts/audiocontrol.sh -1000
 set $micmute --no-startup-id pamixer --allow-boost -t
 set $truemute --no-startup-id pamixer -m
 
@@ -234,3 +234,4 @@ bindsym $mod+F6			exec --no-startup-id xbacklight -inc 15
 exec_always --no-startup-id /home/felix/.config/polybar/launch.sh
 exec compton -CGb
 exec /home/felix/.fehbg
+exec /home/felix/scripts/mouseSetup.sh

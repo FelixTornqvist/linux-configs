@@ -32,8 +32,11 @@
 !.config/i3/i3exit
 
 !.config/vifm
-!.config/vifm/*
-!.config/vifm/*/*
+!.config/vifm/colors
+!.config/vifm/colors/*
+!.config/vifm/scripts
+!.config/vifm/scripts/*
+!.config/vifm/vifmrc
 
 !.config/polybar
 !.config/polybar/*
