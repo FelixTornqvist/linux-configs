@@ -235,3 +235,4 @@ exec_always --no-startup-id /home/felix/.config/polybar/launch.sh
 exec compton -CGb
 exec /home/felix/.fehbg
 exec /home/felix/scripts/mouseSetup.sh
+exec /home/felix/scripts/swapCapsWithEscape.sh

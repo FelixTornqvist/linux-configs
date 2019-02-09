@@ -13,6 +13,8 @@ This repo uses submodules for vim plugins, so use --recurse-submodules when clon
 
 ### Get these with apt-get:
 
+* curl
+* npm
 * nvim
 * screen
 * file-roller
