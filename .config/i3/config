@@ -70,6 +70,9 @@ bindsym --release Ctrl+Shift+Print exec ~/scripts/screenshot.sh sc
 # kill focused window
 bindsym $mod+q kill
 
+# pin focused window (make visible on all screens)
+bindsym $mod+p sticky toggle
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications

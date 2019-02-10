@@ -16,8 +16,12 @@ if dein#load_state('~/.cache/dein')
   else
     call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
   endif
+  call dein#add('Shougo/neco-syntax')
   call dein#add('Shougo/echodoc.vim')
   call dein#add('HerringtonDarkholme/yats.vim')
+  "call dein#add('mattn/emmet-vim')
+  call dein#add('othree/html5.vim')
+  call dein#add('othree/csscomplete.vim')
  " For Denite features
   call dein#add('Shougo/denite.nvim')
 
@@ -84,9 +88,10 @@ map k gk
 " TAB cycles through autocomplete
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 map <F12> :TSDef<CR>
-map <S-F2> :TSRefs
+map <F11> :TSRefs<CR>
 map <c-k><c-i> :TSDoc<CR>
 
+set noshowmode
 set number
 "set nowrap
 "set textwidth=80
@@ -103,4 +108,40 @@ hi Search ctermbg=cyan ctermfg=black
 let $FZF_DEFAULT_COMMAND='find .'
 let g:airline_powerline_fonts = 1
 let deoplete#enable_at_startup = 1
+let g:deoplete#file#enable_buffer_path = 1
 let g:echodoc#enable_at_startup = 1
+let g:nvim_typescript#javascript_support = 1
+
+" omnifunc
+aug omnicomplete
+  au!
+  autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS noci
+"  au FileType css,sass,scss,stylus,less setl omnifunc=csscomplete#CompleteCSS
+"  au FileType html,htmldjango,jinja,markdown setl omnifunc=emmet#completeTag
+"  au FileType javascript,jsx,javascript.jsx setl omnifunc=tern#Complete
+"  au FileType python setl omnifunc=pythoncomplete#Complete
+"  au FileType xml setl omnifunc=xmlcomplete#CompleteTags
+aug END
+
+if !exists('g:deoplete#omni#input_patterns')
+	let g:deoplete#omni#input_patterns = {}
+endif
+" let g:deoplete#omni#input_patterns.cpp = [
+" 			\ '[^. *\t]\.\w*',
+" 			\ '[^. *\t]->\w*',
+" 			\ '[\w>]*::\w*',
+" 			\ ]
+" 
+" let g:deoplete#omni#input_patterns.html = [
+" 			\ '<',
+" 			\ ]
+
+call deoplete#custom#option('omni_patterns', {
+\ 'java': '[^. *\t]\.\w*',
+\  'html': ['<', '</', '<[^>]*\s[[:alnum:]-]*'],
+\  'xhtml': ['<', '</', '<[^>]*\s[[:alnum:]-]*'],
+\  'xml': ['<', '</', '<[^>]*\s[[:alnum:]-]*'],
+\  'css': ['.*\w'],
+\})
+
