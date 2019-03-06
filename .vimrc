@@ -49,6 +49,7 @@ map <S-Insert> <MiddleMouse>
 vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()
 nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(expand((exists("g:netrw_gx")? g:netrw_gx : '<cfile>')),netrw#CheckIfRemote())
 inoremap  u
+map <c-s> :w<CR>
 let &cpo=s:cpo_save
 unlet s:cpo_save
 set background=dark
@@ -93,6 +94,7 @@ map <c-k><c-i> :TSDoc<CR>
 
 set noshowmode
 set number
+set relativenumber
 "set nowrap
 "set textwidth=80
 set colorcolumn=80

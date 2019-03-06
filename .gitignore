@@ -41,7 +41,8 @@
 !.config/vifm/vifmrc
 
 !.config/polybar
-!.config/polybar/*
+!.config/polybar/config
+!.config/polybar/launch.sh
 
 !.config/compton.conf
 
@@ -55,6 +56,7 @@
 !scripts/screenshot.sh
 !scripts/start\ EQ.sh
 !scripts/start\ qpaeq.sh
+!scripts/swapCapsWithEscape.sh
 
 !scripts/mic/
 !scripts/mic/*
