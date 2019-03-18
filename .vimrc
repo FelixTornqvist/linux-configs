@@ -86,6 +86,9 @@ nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 map j gj
 map k gk
 
+nmap <C-h> gT
+nmap <C-l> gt
+
 " TAB cycles through autocomplete
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 map <F12> :TSDef<CR>
