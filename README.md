@@ -13,6 +13,12 @@ This repo uses submodules for vim plugins, so use --recurse-submodules when clon
 
 ### Get these with apt-get:
 
+* rhythmbox
+* wine-stable
+* firefox
+* gparted
+* usb-creator-gtk
+* transmission
 * curl
 * npm
 * nvim
