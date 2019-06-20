@@ -9,6 +9,7 @@ This repo uses submodules for vim plugins, so use --recurse-submodules when clon
 * polybar https://github.com/jaagr/polybar.git
 * fzf https://github.com/junegunn/fzf
 * spotify (debian package from their repo)
+* Blender (from blender.org)
 
 
 ### Get these with apt-get:
